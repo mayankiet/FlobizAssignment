@@ -1,10 +1,11 @@
 package entities.response;
 
-public class CreatePetResponse {
+public class CreateIssueResponse {
 
     private String description;
     private String fromemail;
     private String title;
+    private int id;
 
     public void setDescription(String description){
         this.description = description;
@@ -28,5 +29,13 @@ public class CreatePetResponse {
 
     public String getTitle(){
         return  title;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
     }
 }
